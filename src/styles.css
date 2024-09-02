@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  border-bottom: 2px solid black;
+  margin: 0;
+  text-align: center;
+}
+
+#content {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+form {
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 5px;
+  text-wrap: nowrap;
+}
+
+#chartBox {
+  border-bottom: 2px solid black;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+#myChart {
+  width: 100%;
+  height: 100%;
+}
+
+.form-group input {
+  width: 9ch;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-bottom: 3px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.buttons {
+    justify-content: center;
+}
+

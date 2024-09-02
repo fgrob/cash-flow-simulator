@@ -1,0 +1,42 @@
+#logsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+#logsTable thead tr {
+    background-color: #4CAF50; /* Color de fondo para la cabecera */
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+#logsTable th, #logsTable td {
+    padding: 10px 1px; /* Espaciado interno de las celdas */
+    border: 1px solid #ddd; /* Bordes de las celdas */
+}
+
+#logsTable tbody tr {
+    background-color: #f9f9f9; /* Color de fondo para las filas de datos */
+}
+
+#logsTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alterna colores para cada fila par */
+}
+
+#logsTable tbody tr:hover {
+    background-color: #ddd; /* Color de fondo cuando se pasa el cursor por encima */
+}
+
+#logsTable th {
+    cursor: pointer;
+    background-color: #3E8E41;
+    transition: background-color 0.3s ease;
+}
+
+#logsTable th:hover {
+    background-color: #366D36; /* Cambio de color en el hover de las cabeceras */
+}
+

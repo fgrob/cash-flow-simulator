@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Flow Simulator</title>
+  </head>
+  <body>
+    <h1>Cash Flow Simulator</h1>
+    <div id="content">
+      <form id="paramsForm">
+        <div class="form-group">
+          <label for="buyPriceInput">Buy Price</label>
+          <input type="number" id="buyPriceInput" min="0"/>
+        </div>
+        <div class="form-group">
+          <label for="sellPriceInput">Sell Price</label>
+          <input type="number" id="sellPriceInput" min="0"/>
+        </div>
+        <div class="form-group">
+          <label for="buyPaymentDaysInput">Buy Payment Days</label>
+          <input type="number" id="buyPaymentDaysInput" min="0"/>
+        </div>
+        <div class="form-group">
+          <label for="sellPaymanetDaysInput">Sell Payment Days</label>
+          <input type="number" id="sellPaymentDaysInput" min="0"/>
+        </div>
+        <div class="form-group">
+          <label for="buyFrequencyInput">Buy Frequency</label>
+          <input type="number" id="buyFrequencyInput" min="0"/>
+        </div>
+        <div class="form-group">
+          <label for="sellFrequencyInput">Sell Frequency</label>
+          <input type="number" id="sellFrequencyInput" min="0"/>
+        </div>
+        <div class="form-group">
+          <label for="priceIncreaseFrequencyInput"
+            >Price Increase Frequency</label
+          >
+          <input type="number" id="priceIncreaseFrequencyInput" min="0"/>
+        </div>
+        <div class="form-group">
+          <label for="buyPriceIncreaseInput">Buy Price Increase</label>
+          <input type="number" step="0.01" id="buyPriceIncreaseInput" min="0"/>
+        </div>
+        <div class="form-group">
+          <label for="sellPriceIncreaseInput">Sell Price Increase</label>
+          <input type="number" step="0.01" id="sellPriceIncreaseInput" min="0"/>
+        </div>
+        <div class="form-group">
+          <label for="initialCashInput">Initial Cash</label>
+          <input type="number" id="initialCashInput" min="0"/>
+        </div>
+        <div class="form-group">
+          <label for="simulationDaysInput">Simulation Days</label>
+          <input type="number" id="simulationDaysInput" min="0"/>
+        </div>
+        <div class="form-group buttons">
+          <button id="resetButton">Reset</button>
+        </div>
+      </form>
+      <div id="chartBox">
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+    <div>
+      <table id="logsTable">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Actions</th>  
+            <th>Cash</th>
+            <th>Accounts Receivable</th>
+            <th>Accounts Payable</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <!-- <table id="resultsTable">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Cash</th>
+          <th>Accounts Receivable</th>
+          <th>Accounts Payable</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table> -->
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
