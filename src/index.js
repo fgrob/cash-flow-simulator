@@ -1,11 +1,11 @@
 // Import necessary modules and styles
-import Company from "./company.js";
-import Simulator from "./simulator.js";
+import Company from "./components/models/company.js";
+import Simulator from "./components/models/simulator.js";
 import './styles.css';
-import './logsTableStyles.css';
-import { createChart } from "./chart.js";
-import { updateResultsTable } from "./resultsTable.js";
-import { logsTable } from "./logsTable.js";
+import './components/tables/logsTableStyles.css';
+import { createChart } from "./components/charts/chart.js";
+import { updateResultsTable } from "./components/tables/resultsTable.js";
+import { logsTable } from "./components/tables/logsTable.js";
 
 // Get input elements by their IDs
 const buyPriceInput = document.getElementById("buyPriceInput");

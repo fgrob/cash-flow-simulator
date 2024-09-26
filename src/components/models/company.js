@@ -1,4 +1,4 @@
-import { round } from "./utils.js";
+import { round } from "../utils/utils.js";
 
 class Company {
     constructor(cash){

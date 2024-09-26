@@ -3,6 +3,16 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
+  font-family: monospace;
+}
+
+#content > * {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 
 h1 {
@@ -21,6 +31,7 @@ form {
   border-bottom: 2px solid black;
   padding: 5px;
   text-wrap: nowrap;
+  font-size: 1.2em;
 }
 
 #chartBox {
@@ -35,14 +46,14 @@ form {
 }
 
 .form-group input {
-  width: 9ch;
+  width: 10ch;
 }
 
 .form-group {
   display: flex;
   justify-content: space-between;
   gap: 5px;
-  margin-bottom: 3px;
+  margin-bottom: 0.5rem;
 }
 
 label {
@@ -53,3 +64,28 @@ label {
     justify-content: center;
 }
 
+#logsPagination button {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  margin: 0.1rem 0.1rem;
+}
+
+#logsPagination button:hover {
+  background-color: #ddd;
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+  #content {
+    flex-direction: column;
+  }
+  .form-group{
+    justify-content: center;
+  }
+  label {
+    min-width: 220px;
+    text-align: center;
+  }
+}
