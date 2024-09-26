@@ -41,3 +41,6 @@ To run the Cash Flow Simulator locally:
 ## Contributing
 
 Contributions are welcome! If you're interested in improving the Cash Flow Simulator, feel free to fork the repository and submit a pull request.
+
+## Screenshots
+<img src="https://github.com/fgrob/cash-flow-simulator/blob/main/Screenshots/cash-flow-simulator.png?raw=true" width="200" height="100"></img>
